@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let names = ['a','b','c'];
+
+        function showNames() {
+            document.getElementById('show').innerHTML = ``;
+
+            for (let i = 0; i < names.length; i++) {
+                const element = names[i];
+
+                document.getElementById('show').innerHTML += `<li>${element}</li>`;
+                
+            }
+        }
+    </script>
+</head>
+<body onload="showNames()">
+
+    <ul id="show">
+
+
+    </ul>
+    
+</body>
+</html>
